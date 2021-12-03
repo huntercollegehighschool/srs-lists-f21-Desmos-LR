@@ -7,4 +7,8 @@ Define a function above_average that takes a list of integers or floats as an ar
 You may define a separate function that finds the average of a list, though you don't have to.
 '''
 def above_average(lst):
-  pass #delete this line when you start writing your code
+  x=[]
+  for integer in lst:
+    if integer > sum(lst)/len(lst):
+      x.append(integer)
+  return x
